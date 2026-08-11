@@ -11,13 +11,18 @@
  <h1>Selamat Datang di Praktikum Javascript!</h1>
  <button id="tombolSapa">Klik Saya!</button>
  <script>
+  document.getElementById('teksPesan').textContent = 'Teks paragraf sudah diubah oleh Javascript!';
  // Mendapatkan elemen tombol berdasarkan ID
  const tombol = document.getElementById('tombolSapa');
  // Menambahkan event listener untuk aksi 'click'
  tombol.addEventListener('click', function() {
  alert('Halo, Selamat Datang di Dunia Javascript!');
 });
- 
- </script>
+ const tombolWarna = document.getElementById('tombolWarna');
+11. tombolWarna.addEventListener('click', function() {
+12. document.body.style.backgroundColor = 'lightblue';
+13. });
+14. Pastikan kode Javascript Anda terlihat seperti ini (gabungkan dengan kode sebelumnya):
+</script>
 </body>
 </html>
